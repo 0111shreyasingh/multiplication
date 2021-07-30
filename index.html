@@ -1,0 +1,20 @@
+<html>
+	<head>
+		<title>Multiplication</title>
+	</head>
+	<body style="background-color: black;">
+		<script>
+			var n=prompt("Enter the no. whose table is to be created"); //no. whose table is to be created
+			var t=prompt("Enter the no. of terms till where the table is to be created"); //no. of terms till where the table is to be created
+			
+			document.write("<table border='10' width='1200' cellpadding='10%' align='center' style='text-align: center; font-family: ani; font-size:30px; background-color: cyan;>'");
+			document.write("<tr><th colspan='5' style='background-color: darkslateblue; color: cyan; font-size: 40px;'>Multiplication table</th> </tr>");
+			for ( var a=1; a<=t; a++ ) 
+			{
+				var p=n*a;
+				document.write("<tr><td>"+n +"</td><td> x </td><td>"+ a +"</td><td> = </td><td>"+p+ "</td></tr>");
+			}
+			document.write("</table>");
+		</script>
+	</body>
+</html>
